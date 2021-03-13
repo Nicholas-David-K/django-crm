@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJCRM</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    /* .lead {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 6px;
+        margin-top: 6px;
+        background-color: white;
+        width: 100px;
+    } */
+</style>
+<body>
+{% include 'partials/_navbar.html' %}
+{% block content %}{% endblock content %}   
+
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %} 
+    <div class="p-9 max-w-4xl mx-auto">
+        <h1 class="font-bold text-3xl mb-5">Create a New Lead</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Create Lead</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load tailwind_filters %}
+
+{% block content %}
+<section class="text-gray-600 body-font relative w-100 max-w-lg mx-auto">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Create an Account</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+    </div>
+    <form action="" method="POST" class="mb-10">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Create my account</button>
+    </form>
+    <p class="text-gray-500 max-w-lg mx-auto">Already have an account? <span class="text-indigo-500">
+        <a href="{% url 'login' %}"> Login</a>
+    </span></p>
+  </div>
+</section>
+
+
+{% endblock content %}

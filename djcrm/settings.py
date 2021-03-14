@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '5b5a3d25405c2da887ee529a0c4ccbd2ed9c35f5248dacdd43'
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = (os.environ.get("DEBUG_VALUE") == "True")
-DEBUG = True
+DEBUG = (os.environ.get("DEBUG_VALUE") == "True")
+
 
 ALLOWED_HOSTS = ['djacrm.herokuapp.com']
 
@@ -174,4 +174,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_USE_SSL = False
 
 
+# database settings
 django_heroku.settings(locals())

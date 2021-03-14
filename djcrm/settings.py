@@ -25,7 +25,7 @@ SECRET_KEY = '5b5a3d25405c2da887ee529a0c4ccbd2ed9c35f5248dacdd43'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get("DEBUG_VALUE") == "True")
 
-ALLOWED_HOSTS = ['https://djacrm.herokuapp.com']
+ALLOWED_HOSTS = ['djacrm.herokuapp.com']
 
 
 # Application definition
